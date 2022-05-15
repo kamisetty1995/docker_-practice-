@@ -1,0 +1,8 @@
+FROM tomcat:8.0.20-jre8
+COPY target/maven-web-app*.war /usr/local/tomcat/webapps/maven-web-application.war
+Run echo "running as one"
+Run mkdir/apps
+Run echo "running as two"
+Run yum install unzip -y
+CMD [ "echo", "welcome to king world"]
+
